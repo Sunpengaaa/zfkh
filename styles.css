@@ -1,0 +1,134 @@
+:root {
+    --primary-purple: #8e44ad;
+    --light-purple: #f3e5f5;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.bg-purple {
+    background-color: var(--primary-purple);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.text-purple {
+    color: var(--primary-purple);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    border-color: var(--primary-purple);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.list-group-item {
+    border-color: var(--primary-purple);
+}
+
+.btn-primary {
+    background-color: var(--primary-purple);
+    border-color: var(--primary-purple);
+}
+
+.btn-primary:hover {
+    background-color: #7d3c98;
+    border-color: #7d3c98;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--primary-purple);
+}
+
+/* 轮播图样式 */
+.carousel {
+    max-height: 500px; /* 增加最大高度 */
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 500px; /* 增加高度 */
+}
+
+.carousel-item img {
+    object-fit: cover; /* 保持图片比例并填充整个容器 */
+    object-position: center; /* 居中显示图片 */
+    width: 100%;
+    height: 100%;
+}
+
+/* AI助手样式保持不变 */
+
+/* 添加一些额外的样式来增加页面的丰富性 */
+.section-divider {
+    height: 3px;
+    background-color: var(--primary-purple);
+    margin: 2rem 0;
+}
+
+.img-fluid {
+    border: 2px solid var(--primary-purple);
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary-purple);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 添加媒体查询，以适应不同屏幕尺寸 */
+@media (max-width: 768px) {
+    .carousel, .carousel-item {
+        height: 300px; /* 在小屏幕上减小高度 */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel, .carousel-item {
+        height: 200px; /* 在更小的屏幕上进一步减小高度 */
+    }
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-box {
+    display: none;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 其余样式保持不变 */
+
+/* 在文件末尾添加以下代码 */
+
+body, a, button {
+    cursor: url('images/product1.gif'), auto;
+}
+
+/* 可选：为可点击元素添加不同的光标样式 */
+a:hover, button:hover {
+    cursor: url('images/product1.gif') 4 4, pointer;
+}
